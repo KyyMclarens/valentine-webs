@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AHM Flow System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="header">
+  <div class="logo">AHM</div>
+  <h2>Flow Transaksi Sarana Handling Supplier</h2>
+</div>
+
+<div class="main">
+
+<!-- LEFT -->
+<div class="card">
+<h3>1. Monitoring Stock</h3>
+
+<table>
+<tr>
+<th>Supplier</th>
+<th>Qty</th>
+<th>Status</th>
+<th>Aksi</th>
+</tr>
+
+<tr>
+<td>PT SERASI</td>
+<td>120</td>
+<td class="over">Over</td>
+<td><button class="btn-blue" onclick="startFlow()">Detail</button></td>
+</tr>
+
+<tr>
+<td>PT LOGISTIK</td>
+<td>80</td>
+<td class="normal">Normal</td>
+<td>-</td>
+</tr>
+
+</table>
+</div>
+
+<!-- RIGHT -->
+<div>
+
+<div class="card">
+<h3>2. Upload</h3>
+<div class="upload">Upload File</div>
+<button class="btn" onclick="nextStep()">Submit</button>
+</div>
+
+<div class="card">
+<h3>3. Create Memo</h3>
+<button class="btn" onclick="nextStep()">Create Memo</button>
+<button class="btn" onclick="nextStep()">Cetak Memo</button>
+</div>
+
+<div class="card">
+<h3>4. Take Out</h3>
+<button class="btn" onclick="nextStep()">Proses</button>
+</div>
+
+<div class="card">
+<h3>Flow Progress</h3>
+
+<div id="s1" class="step active">Monitoring</div>
+<div id="s2" class="step">Upload Request</div>
+<div id="s3" class="step">Create Memo</div>
+<div id="s4" class="step">Cetak Memo</div>
+<div id="s5" class="step">Take Out</div>
+<div id="s6" class="step">Update Stock</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
